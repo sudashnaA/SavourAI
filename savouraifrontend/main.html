@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/main.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <script src="src/sidebar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <script src="src/block.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <div id="popup" class="successPopup">Saved Recipe</div>
+    <sidebar-component></sidebar-component>
+    <div id="container2" class="container2">  
+        <div class="formcontainer">
+            <form onsubmit="return false" id="form">
+                <div class="titlecontainer">
+                    <h2 class="maintitle">Generate Recipe</h2>
+                </div>
+
+                <div class="input-group">
+                    <label class= "label2" for="recipe-type-input">Recipe Type</label>
+                    <select class="mainform-input" id="recipe-type-input" name="Recipe Type">
+                        <option value="standard">Standard</option>
+                        <option value="random">Random</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label class= "label2" for="food-input">Select Food</label>
+                    <select class="mainform-input" id="food-input" name="food">
+                        <option value="random">Random</option>
+                        <option value="burger">Burger</option>
+                        <option value="sandwich">Sandwich</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="roti">Roti</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="curry">Curry</option>
+                        <option value="roast">Roast</option>
+                        <option value="icecream">Ice Cream</option>
+                        <option value="kebab">Kebab</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                <div class="input-group custom-food" id="custom-food">
+                    <label class= "label2" for="custom-food-input">Custom Food</label>
+                    <input id="custom-food-input" type="text" name="custom-food" placeholder="Enter Custom Food">
+                </div>
+
+                <div id="group">
+                    <div class="input-group">
+                        <label for="ingredients-input">Ingredients</label>
+                        <input type="text" id="ingredients-input" name="ingredients" placeholder="Enter Ingredients">
+                    </div>
+                    <div class="input-group">
+                        <label class= "label2" id="extra-requests-input-label" for="extra-requests-input">Enter Requests</label>
+                        <input type="text" id="extra-requests-input" name="Extra Requests" placeholder="Extra Requests">
+                    </div>
+                </div>
+
+                <div class="error-group">
+                    <p id="errormsg" class="error"></p>
+                </div>
+                <div class="wrapper"><button id="formbutton" class="formbutton" type="submit">Generate</button></div>
+            </form>
+        </div>  
+        <div id="loader"></div>
+        <div id="outputcontainer" class="outputcontainer">
+            <div id="output" class="output">
+            </div>
+            <div id="outputbuttonscontainer" class="outputbuttonscontainer">
+                <button id="newrecipebutton" title="New Recipe"><img src = "graphics/new-svgrepo-com.svg" alt="New Recipe Button"/></button>
+                <button id="rerollbutton" title="Reroll"><img src = "graphics/restart-svgrepo-com (1).svg" alt="Reroll Button"/></button>
+                <button id="saverecipebutton" title="Save Recipe"><img src = "graphics/save-floppy-svgrepo-com.svg" alt="Save Recipe Button"/></button>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

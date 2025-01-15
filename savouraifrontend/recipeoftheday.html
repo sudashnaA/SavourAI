@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/recipeoftheday.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <script src="src/sidebar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <script src="src/block.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <div id="popup" class="successPopup">Saved Recipe</div>
+    <sidebar-component></sidebar-component>
+    <div id="container2" class="container2"> 
+        
+        <div class="titlecontainer">
+            <h2  id=maintitle class="maintitle hidden">Recipe of the Day:</h2>
+        </div>
+
+        <div id="loader" style="display: block;" class="loader"></div>
+
+        <div id="outputcontainer" class="outputcontainer">
+            <div id="output" class="output">
+            </div>
+        </div>
+        <div id="outputbuttonscontainer" class="outputbuttonscontainer">
+            <button id="saverecipebutton" title="Save Recipe"><img src = "graphics/save-floppy-svgrepo-com.svg" alt="Save Recipe Button"/></button>
+        </div>
+
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

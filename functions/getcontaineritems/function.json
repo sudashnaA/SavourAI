@@ -1,0 +1,31 @@
+{
+    "scriptFile": "function_app.py",
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": [
+          "get",
+          "post"
+        ],
+        "route": "functions/getitems"
+      },
+      {
+        "type": "cosmosDB",
+        "direction": "out",
+        "name": "doc",
+        "databaseName": "savourai",
+        "collectionName": "users",
+        "createIfNotExists": "true",
+        "connectionStringSetting": "AzureCosmosDBConnectionString"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "$return"
+      }
+    ]
+  }
+  

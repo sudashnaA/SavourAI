@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/index.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <div id="popup" class="successPopup2">Success, Redirecting...</div>
+    <div class="container">
+        <div class="wrapper">
+            <h2 class="maintitle">Signup</h2>
+        </div>
+        <div class="formcontainer">
+            <form onsubmit="return false" id="form">
+                <div class="loginform-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="loginform-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="error-group">
+                    <p id="errormsg" class="error"></p>
+                </div>
+                <div class="wrapper"><button class="formbutton" type="submit">Signup</button></div>
+                <div class="wrapper"><a class="redirect" onclick="location.href = 'login.html';">Already have an account?, Login</a></div>
+            </form>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

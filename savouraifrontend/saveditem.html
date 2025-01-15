@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/saveditem.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <script src="src/sidebar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <script src="src/block.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <div id="popup" class="successPopup"></div>
+    <sidebar-component></sidebar-component>
+    <div id="container2" class="container2"> 
+        
+        <div id="outputbuttonscontainer" class="outputbuttonscontainer">
+            <button id="returnbutton" title="Return"><img src = "graphics/return-svgrepo-com.svg" alt="Return Button"/></button>
+            <button id="editbutton" title="Edit"><img src = "graphics/new-svgrepo-com.svg" alt="Edit Button"/></button>
+            <button id="deletebutton" title="Delete"><img src = "graphics/delete-svgrepo-com.svg" alt="Delete Button"/></button>
+            <button id="removebutton" class="hidden" title="Remove from Collection"><img src = "graphics/remove-square-svgrepo-com.svg" alt="Remove Button"/></button>
+        </div>
+        
+        <div id="outputcontainer" class="outputcontainer">
+            <div id="output" class="output">
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

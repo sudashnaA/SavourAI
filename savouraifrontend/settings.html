@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/settings.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <script src="src/sidebar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <script src="src/block.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <sidebar-component></sidebar-component>
+    <div id="container2" class="container2">  
+        <div class="titlecontainer"><h2 class="maintitle">Settings</h2></div>
+        <div class="titlecontainer">
+            <label class="switchlabel" for="switch">Theme</label>
+            <label id="switch" class="switch">
+            <input id="checkbox" type="checkbox">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

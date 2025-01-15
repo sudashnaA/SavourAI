@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavourAI</title>
+    <script src="src/addtocollection.js" type="module" defer></script>
+    <script src="src/util.js" type="text/javascript" defer></script>
+    <script src="src/sidebar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/theme.js" type="text/javascript" defer></script>
+    <script src="src/block.js" type="text/javascript" defer></script>
+    <link id ="theme" rel="stylesheet" href="">
+</head>
+<body>
+    <header-component></header-component>
+    <div id="popup" class="successPopup">Deleted Recipe</div>
+    <sidebar-component></sidebar-component>
+    <div id="container2" class="container2">  
+        <div class="container3">
+            <div class="titlecontainer"><h2 class="maintitle" id="maintitle">Add to </h2></div>
+            <div id="returnbuttoncontainer" class="outputbuttonscontainer returnbutton">
+                <button id="returnbutton" title="Return"><img src = "graphics/return-svgrepo-com.svg" alt="Return Button"/></button>
+            </div>
+        </div>
+        <div id="loader" class="loader"></div>
+        <div id="itemscontainer" class="itemscontainer">
+            
+        </div>
+        <div id="addbuttoncontainer" class="outputbuttonscontainer hidden">
+            <button id="addbutton" title="Add"><img id="img" src = "graphics/add-square-svgrepo-com.svg" alt="Add Button"/></button>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer-component></footer-component>
+</body>
+</html>

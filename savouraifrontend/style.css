@@ -1,0 +1,527 @@
+html{
+    background-color: whitesmoke;
+}
+
+html, body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.maintitle{
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+}
+
+.push{
+    display: flex;
+    flex: 1;
+}
+
+
+.logocontainer > img{
+    margin-top: 2.3rem;
+    height: 40px;
+    width: 40px;
+}
+
+.logocontainer{
+    margin-left: 1rem;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+.formcontainer{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: centre;
+}
+
+.loginform-group{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-group{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-group > input{
+    text-align: center;
+}
+
+.input-group > select{
+    text-align: center;
+}
+
+.input-group > label{
+    display:inline-block;
+    width:200px;
+}
+
+#extra-requests-input-label{
+    font-size: 1.3rem;
+}
+
+.formbutton{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgba(193, 231, 110, 1);
+}
+
+.error-group{
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.error{
+    color: rgb(206, 67, 67);
+    font-size: 1rem;
+}
+
+.redirect{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+button:hover{
+    filter: brightness(60%);
+}
+
+a:hover{
+    color: blue;
+}
+
+.successPopup {
+    background-color: aliceblue;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    padding: 20px;
+    width: 10rem;
+    height: 2rem;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    position: fixed;
+    opacity: 0;
+}
+
+.successPopup2 {
+    background-color: gainsboro;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    padding: 20px;
+    width: 20rem;
+    height: 2rem;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -17%);
+    position: fixed;
+    opacity: 0;
+}
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 500ms, opacity 300ms;
+}
+.fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 0px;
+    background-color: rgb(226, 226, 226);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: 0.2s;
+}
+
+.openbtn{
+    position: fixed;
+    top: 40%;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+  
+/* Active/current link */
+.sidebar a.active {
+    background-color: rgba(193, 231, 110, 1);
+    color: black;
+}
+  
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+  
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.container2 {
+    margin-left: 0px;
+    transition: margin-left .2s; /* If you want a transition effect */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2rem;
+}
+
+.custom-food{
+    display: none;
+}
+
+.label2{
+    font-size: 1.5rem;
+}
+
+.label2small{
+    font-size: 1rem;
+}
+
+.item{
+    font-size: 1rem;
+}
+
+.item-button{
+    margin-left: 0.5rem;
+    height:1.5rem;
+    width:1.5rem;
+}
+
+.item-container{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mainform-input{
+    background-color: white;
+    font-size: 1rem;
+    width: 170px;
+    border: 1px solid black;
+}
+
+.titlecontainer{
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.outputcontainer{
+    display: none;
+    margin: 0 auto;
+    width: 40rem;
+    background-color: rgb(220, 243, 169);
+    padding: 0.5rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+.outputbuttonscontainer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.outputbuttonscontainer > button > img{
+    height: 30px;
+    width: 30px;
+}
+
+.output > div{
+    text-align: center;
+}
+
+.output > p {
+    padding-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.output > div > h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .outputcontainer {
+      width:300px;
+    }
+    .ingredients-list{
+        margin-left: 1rem;
+    }
+}
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#loader {
+    display: none;
+    margin: 0 auto;
+    border: 16px solid rgb(161, 159, 159); /* Light grey */
+    border-top: 16px solid gainsboro; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.itemscontainer{
+    width: 80vw;
+    margin: 0 auto;
+    display: none;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.saveditem{
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(220, 243, 169);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.2s;
+}
+
+.itemscontainercollections{
+    width: 80vw;
+    margin: 0 auto;
+    display: none;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collectionitem{
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(220, 243, 169);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.collectionitem > p{
+    font-size: larger;
+}
+
+@media screen and (max-width: 450px) {
+    #saveditem {
+        padding: 0.2rem;
+    }
+}
+
+#return-button{
+    font-size: 2rem;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(0, 0, 0)
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(0, 0, 0)
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switchlabel{
+    vertical-align: -7px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    margin-top: 1rem;
+    display: none;
+    text-align: center;    
+}
+
+.form-popup > form > input{
+    width: 12rem;
+    text-align: center;
+}
+
+#addtocollectioncontainer{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.selecteditem{
+    background-color: rgb(175, 243, 255);
+}
+
+.returnbutton{
+    margin-top: 2.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+}
